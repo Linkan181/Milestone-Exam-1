@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+    background-color: yellow;
+  }
+    </style>
+</head>
+<body>
+    
+    <p id="targetp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid tenetur recusandae similique odit aut voluptate fuga eaque explicabo eveniet deserunt beatae perferendis, sapiente obcaecati odio fugit harum magni cupiditate optio cum ex qui! Repellendus id voluptas, facere molestiae quas, nihil maxime recusandae, provident corrupti facilis aut velit nobis? At sed ex distinctio tempora! Hic doloribus unde, aliquid in vitae qui incidunt, corporis quis, voluptatibus dolores nostrum beatae facilis repellendus eum sunt ratione quasi praesentium est quibusdam dignissimos obcaecati ipsa perspiciatis! Cupiditate, soluta numquam officia consectetur iure impedit voluptas iste dolores error quia! Asperiores ipsa modi fugiat voluptates repellat consequatur?</p>
+    <script>
+    function highlightWords() {
+    const p = document.querySelector("#targetp");
+    const words = p.innerHTML.split(" ");
+    p.innerHTML = words.map(word => word.length > 8 ? `<span style="background-color: yellow;">${word}</span>` : word).join(" ");
+  }
+
+  highlightWords();
+    </script>
+</body>
+</html>
