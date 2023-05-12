@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* display:flex; */
+}
+body{
+    background-color:#6495ed;
+}
+.body-size{
+     height:100vh;
+    display: flex;
+    justify-content: center;
+    /* margin-top:10px; */
+
+}
+.box{
+    height: 390px;
+    width:400px;
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    padding:40px;
+    gap:20px;
+   
+}
+
+.input{
+    width:300px;
+    font-size: 17px;
+    padding:6px;
+}
+
+label{
+    font-size:22px;
+}
+
+/* design the save button  */
+#button1{
+    width:100px;
+    padding:5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px auto;
+}
