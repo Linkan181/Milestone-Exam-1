@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading">The most affordable learning platform</h2>
+    <div class="btn_box">
+        <button id="btn">Click to Change</button>
+    </div>
+
+    <script>
+        let heading=document.getElementById("heading")
+        let Btn=document.getElementById("btn");
+        Btn.addEventListener("click",Change);
+
+        function Change(){
+            if(heading.innerText==="The most affordable learning platform"){
+                heading.innerText="PW Skills"
+            }
+            else{
+                heading.innerText="The most affordable learning platform"
+            }
+        }
+    </script>
+</body>
+</html>
