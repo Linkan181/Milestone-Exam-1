@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Move Image with Arrow Keys</title>
+    <style>
+      #image {
+        height: 200px;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="image" src="pexels-karolina-grabowska-4386433.jpg" alt="Placeholder Image" />
+
+    <script>
+      const image = document.querySelector("#image");
+      let x = 0;
+      let y = 0;
+
+      function moveImage(e) {
+        switch (e.keyCode) {
+          case 37:
+            x -= 10;
+            break;
+          case 38:
+            y -= 10;
+            break;
+          case 39:
+            x += 10;
+            break;
+          case 40:
+            y += 10;
+            break;
+        }
+
+        image.style.transform = `translate(${x}px, ${y}px)`;
+      }
+
+      document.addEventListener("keydown", moveImage);
+    </script>
+  </body>
